@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("Presentation.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+			color: cyan;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #bouton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #3498db;
+            color: #FFD966;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Pour aller sur mon e-portfolio cliquer ici</h1>
+        <button id="bouton" onclick="allerVerseportfolio()">e-portfolio</button>
+    </div>
+
+    <script>
+        function allerVerseportfolio() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
